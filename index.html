@@ -6,7 +6,7 @@
 </head>
 <style>
 
-.Nav {
+.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -19,7 +19,7 @@
     padding-top: 60px;
 }
 
-.Nav a {
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -28,11 +28,11 @@
     transition: 1s;
 }
 
-.Nav a:hover {
+.sidenav a:hover {
     color: #f1f1f1;
 }
 
-.Nav .closebtn {
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 20px;
@@ -46,8 +46,8 @@
 }
 
 @media screen and (max-height: 450px) {
-  .Nav {padding-top: 15px;}
-  .Nav a {font-size: 18px;}
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
 </head>
@@ -55,31 +55,30 @@
 
 	<h1>
 		<center>
-			Mme Aucoins Grammar site
+			Mme Aucoins Grammar sites
 		</center>
 	</h1>
 
-<div id="Navigation" class="Nav">
+<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">About</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
-  <a href="#">Contact</a>
 </div>
 
 <div id="main">
   <h2>Work/Templates</h2>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9932; open</span>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 </div>
 
 <script>
 function openNav() {
-    document.getElementById("Nav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeNav() {
-    document.getElementById("Nav").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
 </script>
