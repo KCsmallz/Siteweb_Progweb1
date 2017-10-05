@@ -6,70 +6,111 @@
 	</title>
 </head>
 <style>
+	h1 {
+		font-family: "Palatino Linotype";
+	  font-weight: bold;
+	  color: #0000ff;
+	  font-size: 32px;
+	}
 
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #b3ffff;
-    overflow-x: hidden;
-    transition: 2s;
-    padding-top: 60px;
-}
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #b3ffff;
+		overflow-x: hidden;
+		transition: 2s;
+		padding-top: 60px;
+	}
 
-.sidenav a {
-    padding: 10px 10px 10px 40px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #666666;
-    display: block;
-    transition: 0.3s;
-}
+	.sidenav a {
+		padding: 10px 10px 10px 40px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #666666;
+		display: block;
+		transition: 0.3s;
+	}
 
-.sidenav a:hover {
-    color: #000000;
-}
+	.sidenav a:hover {
+		color: #000000;
+	}
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+	@media screen and (max-height: 450px) {
+	  .sidenav {padding-top: 15px;}
+	  .sidenav a {font-size: 18px;}
+	}
 </style>
 </head>
 <body>
+	
+	<h1>
+		<center>
+			Mme Aucoins Grammar site
+		</center>
+	</h1>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9932;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+	<div id="mySidenav" 
+		class="sidenav">
+	<a 
+		href="javascript:void(0)" 
+		class="closebtn" 
+		onclick="closeNav()">
+		&#9932;
+	</a>
+	<a 	 
+		href="https://owl.english.purdue.edu/owl/resource/747/13/" 
+		target="iframe1">
+		MLA Format
+	</a>
+	<a 
+		href="#"
+		target="iframe1">
+		Grammar Tips
+		</a>
+	<a 
+		href="#"
+		target="iframe1">
+		Oxford Dictionary
+		</a>
+	<a 
+	  href="#"
+	  target="iframe1">
+	  Thesaurus
+	</a>
+	</div>
 
-<h2>Animated Sidenav Example</h2>
-<p>Click on the element below to open the side navigation menu.</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9910; open</span>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9910; WorkSheets/Examples</span>
 
 <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "280px";
-}
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "325px";
+	}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+
 </script>
+	<center>
+		<iframe height="800px" 
+				width="900px" 
+				name="iframe1" 
+				target="_self" 
+				frameborder="0">
+		</iframe>
+	</center>
 </body>
 </html>
