@@ -58,7 +58,7 @@
 	
 	<h1>
 		<center>
-			Mme Aucoins Grammar site
+			Mme Aucoin's Grammar site
 		</center>
 	</h1>
 
@@ -72,11 +72,12 @@
 	</a>
 	<a 	 
 		href="https://owl.english.purdue.edu/owl/resource/747/13/" 
-		target="iframe1">
+		target="_blank"
+		>
 		MLA Format
 	</a>
 	<a 
-		href="#"
+		href="https://www.grammarly.com/blog/category/handbook/"
 		target="iframe1">
 		Grammar Tips
 		</a>
@@ -102,15 +103,18 @@
 	function closeNav() {
 		document.getElementById("mySidenav").style.width = "0";
 	}
-
+	function loadcontent (page) {
+	$("#contentContainerDiv").load(page);
+	}
+	
+	
 </script>
+<script src="jquery.js"></script>
+
+
 	<center>
-		<iframe height="800px" 
-				width="900px" 
-				name="iframe1" 
-				target="_self" 
-				frameborder="0">
-		</iframe>
+		<div id="contentContainerDiv"></div>
+		
 	</center>
 </body>
 </html>
