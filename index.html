@@ -5,13 +5,54 @@
 	</title>
 </head>
 <style>
+		.container {
+	  position: relative;
+	  width: 20%;
+	}
+
+	.image {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	}
+
+	.overlay {
+	  position: absolute;
+	  bottom: 0;
+	  left: 50%;
+	  right: 50%;
+	  background-color: #b3ffff;
+	  overflow: hidden;
+	  width: 0;
+	  height: 100%;
+	  transition: .5s ease;
+	}
+
+	.container:hover .overlay {
+	  width: 100%;
+	  left: 0;
+	}
+
+	.text {
+	  white-space: nowrap; 
+	  color: white;
+	  font-size: 30px;
+	  position: absolute;
+	  overflow: hidden;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	}
+</style>
+<style>
 	body{background-image: url(http://www.ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1.jpg);background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 	}
-	</style>
-	<style>
+</style>
+<style>
 	a {
     color: #0060B6;
     text-decoration: none;
@@ -88,8 +129,8 @@ a:hover
         color: black;
       }
     }
-	</style>
-	<style>
+</style>
+<style>
 	.sidenav {
 		height: 100%;
 		width: 0;
@@ -137,7 +178,7 @@ a:hover
 			Mme Aucoin's English Help
 		</center>
 	</h1>
-
+	
 	<div id="mySidenav" 
 		class="sidenav">
 	<a 
@@ -165,9 +206,16 @@ a:hover
 	
 	</div>
 
-	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9910; Grammar WorkSheets</span>
+	<span 
+	style="font-size:30px;cursor:pointer" 
+	onclick="openNav()">&#9910; Grammar WorkSheets
+	</span>
+	
 	<center>
-	<a href="https://owl.english.purdue.edu/owl/resource/747/13/" target="_blank">MLA Format
+	<a 
+	href="https://owl.english.purdue.edu/owl/resource/747/13/" 
+	target="_blank">
+	MLA Format
 	</a>
 	<br>
 	<a 
@@ -175,6 +223,24 @@ a:hover
 	  target="_blank">
 	  Thesaurus
 	</a>
+	</center>
+	
+	<center>
+	<div 
+	class="container">
+		<img 
+		src="https://caucoin.weebly.com/uploads/2/4/1/8/24184958/7991427.jpg" alt="Avatar" class="image">
+		<div 
+		class="overlay">
+	<div class="text">
+	<a 
+	href="https://caucoin.weebly.com/" 
+	target="_blank">
+	Check out my Weebly!
+	</a>
+	</div>
+	</div>
+	</div>
 	</center>
 <script>
 	function openNav() {
